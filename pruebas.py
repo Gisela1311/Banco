@@ -30,4 +30,8 @@ print(ING.saldo_total())
 
 print(ING.edad_media())
 
+ING.abrir_cuenta()
+
+BBVA = Banco()
+
 

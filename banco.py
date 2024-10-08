@@ -2,6 +2,11 @@ from cuenta import Cuenta
 from cliente import Cliente
 
 class Banco:
+  '''
+  Asigna cuentas a clientes ya creados. 
+  Permite retirar e ingresar dinero en las cuentas.
+  Podemos consultar el saldo total del banco, la edad media de los clientes y listar las cuentas existentes en el banco.
+  '''
   cuentas_abiertas=0
   def __init__(self):
     self.clientes = []
