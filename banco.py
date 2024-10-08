@@ -8,6 +8,12 @@ class Banco:
     self.cuentas = []
 
   def abrir_cuenta(self, nuevocliente:Cliente, saldo_inicial:int):
+    '''
+    Este método sirve para crear nuevas cuentas. 
+    Se inicia con un contador. 
+    Le asigna al cliente el riesgo de crédito. 
+    Y le suma el riesgo al saldo inicial
+    '''
     Banco.cuentas_abiertas +=1
     cuenta=Cuenta(f"ING000{Banco.cuentas_abiertas}", saldo_inicial)
     riesgo=self.cambiar_riesgo(nuevocliente)
